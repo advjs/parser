@@ -1,4 +1,7 @@
 # custom
+demo/parser
+
+dist
 package-lock.json
 yarn.lock
 

@@ -1,5 +1,6 @@
 import { parse } from '../src';
 import { readFileSync } from 'fs';
+import * as util from 'util';
 
 describe('Function: parse', () => {
   // Read more about fake timers
@@ -10,7 +11,6 @@ describe('Function: parse', () => {
     const testMd = await readFileSync('./demo/test.md', 'utf8');
     const parsedText = parse(testMd);
 
-    const util = require('util');
     console.log(
       util.inspect(parsedText, false, null, true /* enable colors */),
     );
