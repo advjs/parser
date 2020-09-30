@@ -12,3 +12,8 @@ ADV 剧本文本解析器
 
 但我后期可能更希望其与 Markdown 文本相似并兼容。
 即只要遵照 Markdown 语法编写，便可快速生成视觉小说。（略微类似于 [reveal.js](https://github.com/hakimel/reveal.js) 根据 Markdown 生成演示文档的想法。）
+
+### 细则
+
+我：米娜桑，哦哈呦！
+小云：新的一天也要加油鸭！

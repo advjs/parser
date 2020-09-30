@@ -9,6 +9,13 @@ describe('Function: parse', () => {
   test('check parsed text', async () => {
     const testMd = await readFileSync('./demo/test.md', 'utf8');
     const parsedText = parse(testMd);
-    expect(parsedText).toBe(testMd);
+
+    const util = require('util');
+    console.log(
+      util.inspect(parsedText, false, null, true /* enable colors */),
+    );
+
+    const result = Array.isArray(parsedText);
+    expect(result).toBe(true);
   });
 });
