@@ -1,47 +1,24 @@
 {
-  "name": "@avgjs/parser",
+  "name": "@advjs/parser-demo",
+  "description": "A parser demo for @avgjs.",
+  "private": "true",
   "version": "0.0.1",
-  "description": "A parser for @avgjs.",
-  "main": "dist/index.js",
-  "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "@types/marked": "^1.1.0",
-    "@types/node": "^14.11.2",
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-jest": "~23.20.0",
-    "gulp": "^4.0.2",
-    "gulp-typescript": "^6.0.0-alpha.1",
-    "jest": "~26.4.2",
-    "live-server": "^1.2.1",
-    "prettier": "^2.1.2",
-    "rimraf": "~3.0.2",
-    "ts-jest": "^26.4.1",
-    "tsutils": "~3.17.0",
-    "typescript": "^4.0.3"
-  },
   "scripts": {
-    "clean": "rimraf coverage build tmp",
-    "build": "tsc -p tsconfig.release.json",
-    "build:watch": "tsc -w -p tsconfig.release.json",
-    "dev": "yarn start && yarn watch",
-    "lint": "eslint . --ext .ts,.tsx",
-    "start": "cd demo && live-server",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
-    "watch": "yarn build:watch && cp dist/src"
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "marked": "^1.2.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
+    "vite": "^1.0.0-rc.4"
   },
   "author": {
     "name": "YunYouJun",
     "email": "me@yunyoujun.cn",
     "url": "https://www.yunyoujun.cn"
   },
-  "license": "MPL-2.0",
-  "dependencies": {
-    "marked": "^1.2.0",
-    "tslib": "~2.0.1"
-  }
+  "license": "MPL-2.0"
 }

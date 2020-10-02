@@ -1,10 +1,21 @@
-# adv-parser
+# @advjs/parser
 
-> A parser for @advjs.
+> A parser demo for [@advjs](https://github.com/YunYouJun/adv).
+
+Build with [vite](https://github.com/vitejs/vite).
 
 ADV 剧本文本解析器
 
-> [进度（咕咕咕）一览](https://www.yunyoujun.cn/posts/make-an-avg-engine/)
+## 相关
+
+### 约定
+
+- 使用 UTF-8 作为编码
+- 使用 LF 换行，而非 Windows 的 CRLF
+
+### 推荐
+
+- 建议使用 [VS Code](https://code.visualstudio.com/) 编辑器
 
 ## 语法
 
@@ -25,3 +36,16 @@ ADV 剧本文本解析器
   "type": "xxx"
 }
 ```
+
+### 类型
+
+| 类型      | 说明     |
+| --------- | -------- |
+| paragraph | 段落     |
+| narration | 旁白叙述 |
+
+### Q&A
+
+#### 旁白使用 `blockquote` 语法
+
+旁白使用 `blockquote` 语法以避免旁白中存在特殊字符如 `:`/`：`，被当作对话解析。
